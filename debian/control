@@ -1,50 +1,32 @@
-Source: grml-live
+Source: grml-live-grml
 Section: grml
 Priority: extra
 Maintainer: Michael Prokop <mika@grml.org>
+Uploaders: Christian Hofstaedtler <ch@grml.org>
 Build-Depends: debhelper (>= 5)
-Build-Depends-Indep: asciidoc, xsltproc, docbook-xsl
 Standards-Version: 3.9.2
 Homepage: http://grml.org/grml-live/
-Vcs-git: git://git.grml.org/grml-live.git
-Vcs-Browser: http://git.grml.org/?p=grml-live.git
+Vcs-git: git://git.grml.org/grml-live-grml.git
+Vcs-Browser: http://git.grml.org/?p=grml-live-grml.git
 Origin: Grml
 Bugs: mailto:bugs@grml.org
 
-Package: grml-live
-Architecture: all
-Depends: ${misc:Depends}, bc, fai-client (>= 3.4.0), fai-server (>= 3.4.0), genisoimage, mksh, moreutils, squashfs-tools (>= 1:4.2-1~grml00), grub-pc-bin, ipxe, pciutils, memtest86+, syslinux-common
-Recommends: grml-live-addons, grml-live-db, ia32-libs
-Suggests: fai-doc
-Description: build system for creating a Grml (based) Linux live system
- This package provides the build system for creating a Debian /
- Grml based Linux live system (also known as live cd). It is
- based on the FAI (Fully Automatic Installation) framework.
-
 Package: grml-live-addons
 Architecture: all
-Depends: ${misc:Depends}, grml-live
+Depends: ${misc:Depends}
+Recommends: grml-live
 Conflicts: grml-live (<< 0.9.13)
 Description: templates/boot/addons for grml-live
  This package provides the boot addons known as the features
- providing bootoptions bsd, dos, grub and hdt. You can safely
+ providing bootoptions bsd, dos, and grub. You can safely
  skip this package if you don't need the addons.
 
-Package: grml-live-db
+Package: grml-live-compat
 Architecture: all
-Depends: ${misc:Depends}, grml-live, libdbd-sqlite3-perl, libdbi-perl, libtimedate-perl, sqlite3
-Recommends: perl-doc
-Description: log package build information of grml-live to database
- This package provides a database layer for storing build
- information about grml-live builds in a sqlite3 database.
- More details are available in the provided grml-live-db manpage
- and /usr/share/doc/grml-live-db/grml-live-db.html
+Depends: ${misc:Depends}
+Recommends: grml-live, grml-live-addons
+Conflicts: grml-live-addons (<< 0.15.1~)
+Description: templates/boot/addons unstable binaries for grml-live
+ This package provides files from unstable, to allow building
+ GRML on stable, and having all the boot templates actually work.
 
-Package: grml-live-buildd
-Architecture: all
-Depends: ${misc:Depends}, grml-live, mutt (>= 1.5.20), sudo
-Description: autobuild daemon for grml-live
- This package provides example scripts for a simple autobuild
- daemon for the grml-live framework. Those scripts are used
- for creating the official daily grml ISOs provided through
- http://daily.grml.org/
