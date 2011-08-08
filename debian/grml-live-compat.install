@@ -1,1 +1,1 @@
-templates/boot/isolinux       usr/share/grml-live/templates/boot/
+templates/compat/       usr/share/grml-live/templates/
