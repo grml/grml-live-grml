@@ -1,3 +1,15 @@
+grml-live-grml (0.17.0) unstable; urgency=low
+
+  [ Christian Hofstaedtler ]
+  * grml-live-compat: addon files are copied from Debian packages during
+    build time
+
+  [ Michael Prokop ]
+  * Remove TODO file.
+  * Drop TODO installation code from debian/rules.
+
+ -- Christian Hofstaedtler <ch@grml.org>  Mon, 19 Dec 2011 15:50:41 +0100
+
 grml-live-grml (0.15.1~0) unstable; urgency=low
 
   * Split from grml-live to avoid licensing issues.
