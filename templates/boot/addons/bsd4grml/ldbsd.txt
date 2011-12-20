@@ -135,18 +135,18 @@ DESCRIPTION
 
      7.   The hardware is probed:
 
-        + o Console devices: the default BIOS console (INT 10h, which may be
+          +   Console devices: the default BIOS console (INT 10h, which may be
               a MDA/MGA/Hercules, CGA/EGA or VGA CRT/LCD, plus DIN or PS/2 or
               emulated keyboard) as well as up to four serial ports (via the
               BIOS interface).
-        + o Memory: ask the BIOS and probe page by page through the address
+          +   Memory: ask the BIOS and probe page by page through the address
               space, in case the BIOS reports wrong information.
-        + o APM support
-        + o PXE support
-        + o Loadable Multiboot Modules (if any, they are moved off to safe
+          +   APM support
+          +   PXE support
+          +   Loadable Multiboot Modules (if any, they are moved off to safe
               locations and the virtual lmbm device and lmbmfs are set up)
-        + o Floppy disc drives
-        + o Hard disc drives, including El Torito CD-ROM drives
+          +   Floppy disc drives
+          +   Hard disc drives, including El Torito CD-ROM drives
 
      8.   If a command line was passed, it is executed. If it contained a boot
           command, the kernel is attempted to be loaded; otherwise, or if it
@@ -309,9 +309,9 @@ COMMANDS
                       auto-booting
 
              tty      Name of the active console device, for example:
-                    + o com0
-                    + o com1
-                    + o pc0
+                      +   com0
+                      +   com1
+                      +   pc0
 
      stty [device [speed]]
              Displays or sets the speed for a console device. If the baudrate
@@ -336,15 +336,15 @@ IMAGE SPECIFICATIONS
      tion or the ability to stat files (especially remote filesystems).
 
      Examples of valid image specifications are:
-   + o fd0a:/bsd
-   + o hd0o:/bsd.rd
-   + o / (for "ls")
-   + o hd0a:/ (for "ls")
-   + o lmbm:/ (for "ls")
-   + o cd0a:/boot/grub/stage2
-   + o tftp:/bsd.rd.i386
-   + o lmbm:/bsd4grml
-   + o /bsd
+     +   fd0a:/bsd
+     +   hd0o:/bsd.rd
+     +   / (for "ls")
+     +   hd0a:/ (for "ls")
+     +   lmbm:/ (for "ls")
+     +   cd0a:/boot/grub/stage2
+     +   tftp:/bsd.rd.i386
+     +   lmbm:/bsd4grml
+     +   /bsd
 
      Disklabels are read from hard discs (BIOS drive >= 80h) by searching for
      a primary MirOS partition first. The default partition type, 0x27, can be
