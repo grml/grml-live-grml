@@ -1,3 +1,11 @@
+grml-live-grml (0.17.1) unstable; urgency=low
+
+  [ Thorsten Glaser ]
+  * Update MirOS bsd4grml to 20111220
+  * Add new utilities to the FreeDOS floppy disc image
+
+ -- Christian Hofstaedtler <ch@grml.org>  Wed, 21 Dec 2011 21:55:01 +0100
+
 grml-live-grml (0.17.0) unstable; urgency=low
 
   [ Christian Hofstaedtler ]
