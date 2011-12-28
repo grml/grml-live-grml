@@ -3,7 +3,7 @@ Section: grml
 Priority: extra
 Maintainer: Michael Prokop <mika@grml.org>
 Uploaders: Christian Hofstaedtler <ch@grml.org>
-Build-Depends: debhelper (>= 7), pciutils, memtest86+, syslinux-common, ipxe, grub-pc-bin
+Build-Depends: debhelper (>= 7)
 Standards-Version: 3.9.2
 Homepage: http://grml.org/grml-live/
 Vcs-git: git://git.grml.org/grml-live-grml.git
@@ -17,16 +17,15 @@ Depends: ${misc:Depends}
 Recommends: grml-live
 Conflicts: grml-live (<< 0.9.13)
 Description: templates/boot/addons for grml-live
- This package provides the boot addons known as the features
- providing bootoptions bsd, dos, and grub. You can safely
- skip this package if you don't need the addons.
+ This package provides the boot addons bsd4grml, FreeDOS
+ and the All-in-one GRUB.
+ You can safely skip this package if you don't need them.
 
 Package: grml-live-compat
 Architecture: all
-Depends: ${misc:Depends}, grml-live-addons
+Depends: ${misc:Depends}
 Recommends: grml-live
 Conflicts: grml-live-addons (<< 0.15.1~)
-Description: templates/boot/addons unstable binaries for grml-live
- This package provides files from unstable, to allow building
- GRML on stable, and having all the boot templates actually work.
-
+Description: transitional package
+ This package surves no purpose except to easy upgrades
+ from previous versions.

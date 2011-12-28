@@ -33,27 +33,6 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
-	# grub files
-	install -d debian/tmp/templates/compat/grub
-	cp -a /usr/lib/grub/*-pc/*.mod debian/tmp/templates/compat/grub/
-	cp -a /usr/lib/grub/*-pc/*.o debian/tmp/templates/compat/grub/
-	cp -a /usr/lib/grub/*-pc/*.lst debian/tmp/templates/compat/grub/
-	cp -a /usr/share/grub/ascii.pf2 debian/tmp/templates/compat/grub/
-	/usr/bin/grub-mkimage -d /usr/lib/grub/*-pc -o \
-		debian/tmp/templates/compat/grub/core.img biosdisk iso9660 --format=i386-pc
-	# isolinux base files
-	install -d debian/tmp/templates/compat/isolinux
-	for file in isolinux.bin ifcpu64.c32 vesamenu.c32; do \
-		cp -a "/usr/lib/syslinux/$${file}" debian/tmp/templates/compat/isolinux/ ; \
-	done
-	# others
-	install -d debian/tmp/templates/compat/addons
-	cp -a /usr/lib/ipxe/ipxe.lkrn debian/tmp/templates/compat/addons/
-	cp -a /usr/share/misc/pci.ids debian/tmp/templates/compat/addons/
-	cp -a /boot/memtest86+.bin debian/tmp/templates/compat/addons/
-	for file in memdisk chain.c32 hdt.c32 menu.c32; do \
-		cp -a "/usr/lib/syslinux/$${file}" debian/tmp/templates/compat/addons/ ; \
-	done
 
 # Build architecture-independent files here.
 binary-indep: build install
