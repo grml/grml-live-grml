@@ -28,10 +28,9 @@ License:
 License information for the bsd4grml files shipped as
 /usr/share/grml-live/templates/boot/addons/bsd4grml:
 
-   Downloaded from <https://dl.mirbsd.org/MirOS/current/bsd4grml-20100815.tgz>.
-   Thorsten "mirabilos" Glaser <tg@mirbsd.de>
    See /usr/share/grml-live/templates/boot/addons/bsd4grml/LICENCE.TXT
-   for details.
+   for details; full source code for GPL components is in gpl_srcs.tgz
+   and the rest can be retrieved from the MirOS CVS repository.
 
 The grml-live-compat provides copies of various files from other packages to
 make them available to Debian stable users. Please see the copyright files of
