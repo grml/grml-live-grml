@@ -1,3 +1,13 @@
+grml-live-grml (0.18.0) unstable; urgency=low
+
+  [ Christian Hofstaedtler ]
+  * [5b8ea64] Clean out grml-live-compat
+
+  [ Thorsten Glaser ]
+  * [0474e40] Update MirOS bsd4grml to 20120115
+
+ -- Michael Prokop <mika@grml.org>  Mon, 16 Jan 2012 12:38:48 +0100
+
 grml-live-grml (0.17.1) unstable; urgency=low
 
   [ Thorsten Glaser ]
