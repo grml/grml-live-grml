@@ -1,3 +1,15 @@
+grml-live-grml (0.18.1) unstable; urgency=low
+
+  [ Thorsten Glaser ]
+  * [973e6a2] Update MirOS bsd4grml to 20120326
+
+  [ Michael Prokop ]
+  * [e2621d5] ldbsd.com: increase limit of image size. Thanks to
+    Thorsten Glaser <tg@mirbsd.org> for the fix
+  * [f24c0ae] Bump Standards-Version to 3.9.3.
+
+ -- Michael Prokop <mika@grml.org>  Mon, 28 May 2012 01:05:39 +0200
+
 grml-live-grml (0.18.0) unstable; urgency=low
 
   [ Christian Hofstaedtler ]
