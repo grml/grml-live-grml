@@ -1,3 +1,13 @@
+grml-live-grml (0.18.2) unstable; urgency=low
+
+  [ Thorsten Glaser ]
+  * [9102bc8] Update MirOS bsd4grml to 20120910
+
+  [ Michael Prokop ]
+  * [03474ae] Bump Standards-Version to 3.9.4
+
+ -- Michael Prokop <mika@grml.org>  Mon, 17 Dec 2012 13:01:47 +0100
+
 grml-live-grml (0.18.1) unstable; urgency=low
 
   [ Thorsten Glaser ]
