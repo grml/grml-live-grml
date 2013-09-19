@@ -1,3 +1,10 @@
+grml-live-grml (0.18.4) unstable; urgency=low
+
+  [ Thorsten Glaser ]
+  * [eb74039] Update MirOS bsd4grml to 20130915
+
+ -- Michael Prokop <mika@grml.org>  Thu, 19 Sep 2013 11:06:26 +0200
+
 grml-live-grml (0.18.3) unstable; urgency=low
 
   [ Thorsten Glaser ]
