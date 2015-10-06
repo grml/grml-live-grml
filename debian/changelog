@@ -1,3 +1,14 @@
+grml-live-grml (0.19.0) unstable; urgency=medium
+
+  [ mirabilos ]
+  * [394884a] Update MirOS bsd4grml to 20151006
+
+  [ Michael Prokop ]
+  * [7cefd03] Bump Standards-Version to 3.9.6
+  * [d110625] Drop Christian from Uploaders
+
+ -- Michael Prokop <mika@grml.org>  Tue, 06 Oct 2015 23:08:18 +0200
+
 grml-live-grml (0.18.4) unstable; urgency=low
 
   [ Thorsten Glaser ]
