@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Michael Prokop <mika@grml.org>
 Uploaders: Christian Hofstaedtler <ch@grml.org>
 Build-Depends: debhelper (>= 7)
-Standards-Version: 3.9.4
+Standards-Version: 3.9.6
 Homepage: http://grml.org/grml-live/
 Vcs-git: git://git.grml.org/grml-live-grml.git
 Vcs-Browser: http://git.grml.org/?p=grml-live-grml.git
