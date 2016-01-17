@@ -484,4 +484,4 @@ CAVEATS
                 and assumes that the entire floppy disc (except, on sparc, the
                 MD disklabel) is a valid ustar archive.
 
-MirOS BSD #10-current           August 6, 2010                               7
+MirOS BSD #10-current          October 9, 2015                               7
