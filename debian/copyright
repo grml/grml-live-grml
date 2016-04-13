@@ -32,6 +32,14 @@ License information for the bsd4grml files shipped as
    for details; full source code for GPL components is in gpl_srcs.tgz
    and the rest can be retrieved from the MirOS CVS repository.
 
+Netboot.xyz is licensed under the Apache License, Version 2.0.
+On Debian systems, the complete text of the license can be found in
+`/usr/share/common-licenses/Apache-2.0'.
+The netboot.xyz kernel was downloaded from https://boot.netboot.xyz
+(https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn)
+The source code is available on Github:
+https://github.com/antonym/netboot.xyz
+
 The grml-live-compat provides copies of various files from other packages to
 make them available to Debian stable users. Please see the copyright files of
 these packages:
