@@ -1,3 +1,15 @@
+grml-live-grml (0.20.0) unstable; urgency=medium
+
+  [ Andreas "Jimmy" Gredler ]
+  * [64e3584] Added netboot.xyz
+
+  [ Michael Prokop ]
+  * [1d205b9] Bump Standards-Version to 3.9.8
+  * [15d9f1a] Bump debian/compat to 9
+  * [ce76205] Use SSL for Homepage + Vcs-Browser headers
+
+ -- Michael Prokop <mika@grml.org>  Fri, 27 Jan 2017 16:18:31 +0100
+
 grml-live-grml (0.19.1) unstable; urgency=medium
 
   [ mirabilos ]
