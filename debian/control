@@ -2,7 +2,8 @@ Source: grml-live-grml
 Section: grml
 Priority: extra
 Maintainer: Michael Prokop <mika@grml.org>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends:
+ debhelper-compat (= 12),
 Standards-Version: 4.5.0
 Homepage: https://grml.org/grml-live/
 Vcs-git: git://git.grml.org/grml-live-grml.git
@@ -12,9 +13,12 @@ Bugs: mailto:bugs@grml.org
 
 Package: grml-live-addons
 Architecture: all
-Depends: ${misc:Depends}
-Recommends: grml-live
-Conflicts: grml-live (<< 0.9.13)
+Depends:
+ ${misc:Depends},
+Recommends:
+ grml-live,
+Conflicts:
+ grml-live (<< 0.9.13),
 Description: templates/boot/addons for grml-live
  This package provides the boot addons bsd4grml, FreeDOS,
  netboot.xyz and the All-in-one GRUB.
@@ -22,9 +26,12 @@ Description: templates/boot/addons for grml-live
 
 Package: grml-live-compat
 Architecture: all
-Depends: ${misc:Depends}
-Recommends: grml-live
-Conflicts: grml-live-addons (<< 0.15.1~)
+Depends:
+ ${misc:Depends},
+Recommends:
+ grml-live,
+Conflicts:
+ grml-live-addons (<< 0.15.1~),
 Description: transitional package
  This package surves no purpose except to easy upgrades
  from previous versions.
