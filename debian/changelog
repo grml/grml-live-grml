@@ -1,3 +1,16 @@
+grml-live-grml (0.21.0) unstable; urgency=medium
+
+  * [7e0f778] Update netboot.xyz.lkrn to v2.0.17 + provide EFI capable
+    netboot.xyz.efi
+  * [5184909] Minimze debian/rules + switch to debhelper-compat approach
+  * [2506e9c] Bump Standards-Version to 4.5.0
+  * [274083f] debian: execute wrap-and-sort -t -a -s
+  * [b1bf01e] debian: switch Priority from extra to optional
+  * [0f82bff] Drop transitional package grml-live-compat, no longer needed
+  * [8bea7c4] Refresh debian/copyright + port into machine-readable format
+
+ -- Michael Prokop <mika@grml.org>  Fri, 17 Jul 2020 21:47:34 +0200
+
 grml-live-grml (0.20.0) unstable; urgency=medium
 
   [ Andreas "Jimmy" Gredler ]
