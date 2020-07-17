@@ -1,56 +1,53 @@
-This package was debianized by Michael Prokop <mika@grml.org> on
-Sat, 15 Sep 2007 15:35:34 +0200.
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: grml-debootstrap
+Upstream-Contact: Michael Prokop <mika@grml.org>
+Source: https://git.grml.org/?p=grml-debootstrap.git;a=summary
 
-It was downloaded from http://grml.org/
+Files: README.md debian/*
+Copyright: 2007-2020, Michael Prokop <mika@grml.org>
+License: GPL-2+
 
-Upstream Author: Michael Prokop <mika@grml.org>
-
-Copyright:
-
-    © 2007++ by Michael Prokop <mika@grml.org>
-
-License:
-
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this package; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-
-License information for the bsd4grml files shipped as
-/usr/share/grml-live/templates/boot/addons/bsd4grml:
-
-   See /usr/share/grml-live/templates/boot/addons/bsd4grml/LICENCE.TXT
+Files: templates/boot/addons/bsd4grml/*
+Copyright: 2003-2016 The MirOS Project <miros-dev@mirbsd.org>
+License: BSD-3-clause + misc
+Comment: see templates/boot/addons/bsd4grml/LICENCE.TXT
+   See [/usr/share/grml-live/]templates/boot/addons/bsd4grml/LICENCE.TXT
    for details; full source code for GPL components is in gpl_srcs.tgz
    and the rest can be retrieved from the MirOS CVS repository.
 
-Netboot.xyz is licensed under the Apache License, Version 2.0.
-On Debian systems, the complete text of the license can be found in
-`/usr/share/common-licenses/Apache-2.0'.
-The netboot.xyz kernel was downloaded from https://github.com/netbootxyz/netboot.xyz
-(https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn)
-The source code is available on Github:
-https://github.com/netbootxyz/netboot.xyz
+Files: templates/boot/addons/netboot.xyz.*
+Copyright: Antony Messerli <antony@mes.ser.li>
+License: Apache-2.0
+Comment: see https://github.com/netbootxyz/netboot.xyz + https://boot.netboot.xyz
 
-The grml-live-compat provides copies of various files from other packages to
-make them available to Debian stable users. Please see the copyright files of
-these packages:
-   grub-pc-bin
-   syslinux-common
-   ipxe
-   memtest86+
-   pciutils
+License: Apache-2.0
+ On Debian systems the full text of the Apache-2.0 license can be found in
+ /usr/share/common-licenses/Apache-2.0.
 
-On Debian systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL'.
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this package; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the complete text of the GNU General Public License,
+ version 2 can be found in `/usr/share/common-licenses/GPL-2'.
 
-The Debian packaging is © 2007++, Michael Prokop <mika@grml.org> and
-is licensed under the GPL, see above.
+Files: templates/boot/addons/allinone.img
+Copyright: Michael Schierl <schierlm@gmx.de>
+License: misc, see http://schierlm.users.sourceforge.net/bootdisk/index.html
+Comment: downloaded from http://schierlm.users.sourceforge.net/bootdisk/allinone.img
+
+Files: templates/boot/addons/balder10.imz
+Copyright: Misc
+License: GPL-2
+Comment: also see https://www.finnix.org/Balder
