@@ -1,6 +1,6 @@
 Source: grml-live-grml
 Section: grml
-Priority: extra
+Priority: optional
 Maintainer: Michael Prokop <mika@grml.org>
 Build-Depends:
  debhelper-compat (= 12),
