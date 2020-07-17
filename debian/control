@@ -23,15 +23,3 @@ Description: templates/boot/addons for grml-live
  This package provides the boot addons bsd4grml, FreeDOS,
  netboot.xyz and the All-in-one GRUB.
  You can safely skip this package if you don't need them.
-
-Package: grml-live-compat
-Architecture: all
-Depends:
- ${misc:Depends},
-Recommends:
- grml-live,
-Conflicts:
- grml-live-addons (<< 0.15.1~),
-Description: transitional package
- This package surves no purpose except to easy upgrades
- from previous versions.
