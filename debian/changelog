@@ -1,3 +1,10 @@
+grml-live-grml (0.21.1) unstable; urgency=medium
+
+  * [047d829] Update netboot.xyz.lkrn to v2.0.19, supporting Grml 2020.06
+    release
+
+ -- Michael Prokop <mika@grml.org>  Tue, 25 Aug 2020 11:43:08 +0200
+
 grml-live-grml (0.21.0) unstable; urgency=medium
 
   * [7e0f778] Update netboot.xyz.lkrn to v2.0.17 + provide EFI capable
