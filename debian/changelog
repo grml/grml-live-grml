@@ -1,3 +1,13 @@
+grml-live-grml (0.22.0) unstable; urgency=medium
+
+  * [805cc47] Update README to clarify purpose of grml-live-grml
+  * [a4d6ede] Update netboot.xyz.lkrn to v2.0.72, supporting Grml 2022.11
+    release
+  * [2e9279a] Update netboot.xyz.lkrn to v2.0.76, properly supporting Grml
+    2022.11 release
+
+ -- Michael Prokop <mika@grml.org>  Fri, 02 Feb 2024 16:03:36 +0100
+
 grml-live-grml (0.21.1) unstable; urgency=medium
 
   * [047d829] Update netboot.xyz.lkrn to v2.0.19, supporting Grml 2020.06
