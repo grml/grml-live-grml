@@ -1,3 +1,14 @@
+grml-live-grml (0.22.1) unstable; urgency=medium
+
+  [ Chris Hofstaedtler ]
+  * [79b45c4] debian: update Vcs-Git and Vcs-Browser
+
+  [ Michael Prokop ]
+  * [6346ed3] Ship debian/gbp.conf for gbp usage
+  * [0e571b2] debian: Bump Standards-Version to 4.7.0
+
+ -- Michael Prokop <mika@grml.org>  Fri, 22 Nov 2024 17:24:33 +0100
+
 grml-live-grml (0.22.0) unstable; urgency=medium
 
   * [805cc47] Update README to clarify purpose of grml-live-grml
