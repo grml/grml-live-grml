@@ -1,0 +1,2 @@
+grml-live-grml source: source-contains-prebuilt-windows-binary [templates/arch/amd64/boot/addons/netboot.xyz.efi]
+grml-live-grml source: source-contains-prebuilt-windows-binary [templates/arch/arm64/boot/addons/netboot.xyz.efi]
