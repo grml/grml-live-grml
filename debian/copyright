@@ -1,10 +1,10 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: grml-debootstrap
+Upstream-Name: grml-live-grml
 Upstream-Contact: Michael Prokop <mika@grml.org>
-Source: https://git.grml.org/?p=grml-debootstrap.git;a=summary
+Source: https://github.com/grml/grml-live-grml
 
-Files: README.md debian/*
-Copyright: 2007-2020, Michael Prokop <mika@grml.org>
+Files: README.md debian/* update-files
+Copyright: 2007-2024, Michael Prokop <mika@grml.org>
 License: GPL-2+
 
 Files: templates/arch/amd64/boot/addons/netboot.xyz.efi templates/arch/amd64/boot/addons/netboot.xyz.lkrn templates/arch/arm64/boot/addons/netboot.xyz.efi
@@ -33,4 +33,3 @@ License: GPL-2+
  .
  On Debian systems, the complete text of the GNU General Public License,
  version 2 can be found in `/usr/share/common-licenses/GPL-2'.
-
