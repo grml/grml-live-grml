@@ -7,23 +7,6 @@ Files: README.md debian/*
 Copyright: 2007-2020, Michael Prokop <mika@grml.org>
 License: GPL-2+
 
-Files: templates/boot/addons/bsd4grml/*
-Copyright: 2003-2016 The MirOS Project <miros-dev@mirbsd.org>
-License: BSD-3-clause + misc
-Comment: see templates/boot/addons/bsd4grml/LICENCE.TXT
-   See [/usr/share/grml-live/]templates/boot/addons/bsd4grml/LICENCE.TXT
-   for details; full source code for GPL components is in gpl_srcs.tgz
-   and the rest can be retrieved from the MirOS CVS repository.
-
-Files: templates/boot/addons/netboot.xyz.*
-Copyright: Antony Messerli <antony@mes.ser.li>
-License: Apache-2.0
-Comment: see https://github.com/netbootxyz/netboot.xyz + https://boot.netboot.xyz
-
-License: Apache-2.0
- On Debian systems the full text of the Apache-2.0 license can be found in
- /usr/share/common-licenses/Apache-2.0.
-
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -42,12 +25,4 @@ License: GPL-2+
  On Debian systems, the complete text of the GNU General Public License,
  version 2 can be found in `/usr/share/common-licenses/GPL-2'.
 
-Files: templates/boot/addons/allinone.img
-Copyright: Michael Schierl <schierlm@gmx.de>
-License: misc, see http://schierlm.users.sourceforge.net/bootdisk/index.html
-Comment: downloaded from http://schierlm.users.sourceforge.net/bootdisk/allinone.img
 
-Files: templates/boot/addons/balder10.imz
-Copyright: Misc
-License: GPL-2
-Comment: also see https://www.finnix.org/Balder
