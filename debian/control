@@ -17,8 +17,6 @@ Depends:
  ${misc:Depends},
 Recommends:
  grml-live,
-Conflicts:
- grml-live (<< 0.9.13),
 Description: templates/arch/*/boot/addons for grml-live
  This package provides the boot addons for usage with grml-live.
  You can safely skip this package if you don't need them.
