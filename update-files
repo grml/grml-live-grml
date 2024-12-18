@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -euo pipefail
+
+# adjust as needed
+netboot_version="2.0.83"
+
+
+# netboot for amd64:
+echo "Updating netboot for amd64"
+mkdir -p templates/arch/amd64/boot/addons
+pushd templates/arch/amd64/boot/addons >/dev/null
+curl -fSOL# https://github.com/netbootxyz/netboot.xyz/releases/download/"${netboot_version}"/netboot.xyz.lkrn
+curl -fSOL# https://github.com/netbootxyz/netboot.xyz/releases/download/"${netboot_version}"/netboot.xyz.efi
+curl -fSOL#  https://github.com/netbootxyz/netboot.xyz/releases/download/"${netboot_version}"/netboot.xyz-sha256-checksums.txt
+sha256sum --ignore-missing -c netboot.xyz-sha256-checksums.txt
+rm -f netboot.xyz-sha256-checksums.txt
+popd >/dev/null
+
+# netboot for arm64:
+echo "Updating netboot for armm64"
+mkdir -p templates/arch/arm64/boot/addons
+pushd templates/arch/arm64/boot/addons >/dev/null
+rm -f netboot.xyz.efi
+curl -fSOL# https://github.com/netbootxyz/netboot.xyz/releases/download/"${netboot_version}"/netboot.xyz-arm64.efi
+curl -fSOL# https://github.com/netbootxyz/netboot.xyz/releases/download/"${netboot_version}"/netboot.xyz-sha256-checksums.txt
+sha256sum --ignore-missing -c netboot.xyz-sha256-checksums.txt
+mv netboot.xyz-arm64.efi netboot.xyz.efi
+rm -f netboot.xyz-sha256-checksums.txt
+popd >/dev/null
+
