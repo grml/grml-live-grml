@@ -1,3 +1,15 @@
+grml-live-grml (0.23.0) grml-testing; urgency=medium
+
+  * [e2e8bce] Drop all of templates/boot/addons
+  * [8ac7655] New script update-files to ship netboot v2.0.83 files for
+    amd64 + arm64
+  * [e764326] d/copyright: fix Upstream-Name, update Source + Copyright
+    information
+  * [0d1eec5] d/control: drop deprecated Conflicts on grml-live version
+  * [e4be14c] Fix lintian issues
+
+ -- Michael Prokop <mika@grml.org>  Thu, 19 Dec 2024 02:21:22 +0100
+
 grml-live-grml (0.22.1) unstable; urgency=medium
 
   [ Chris Hofstaedtler ]
