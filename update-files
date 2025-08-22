@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # adjust as needed
-netboot_version="2.0.83"
+netboot_version="2.0.88"
 
 
 # netboot for amd64:
