@@ -10,6 +10,7 @@ Vcs-Git: https://github.com/grml/grml-live-grml.git
 Vcs-Browser: https://github.com/grml/grml-live-grml
 Origin: Grml
 Bugs: mailto:bugs@grml.org
+X-Style: black
 
 Package: grml-live-addons
 Architecture: all
