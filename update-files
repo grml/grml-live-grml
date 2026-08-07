@@ -3,11 +3,19 @@
 set -euo pipefail
 
 # adjust as needed
-netboot_version="2.0.88"
+netboot_version="${NETBOOT_VERSION:-3.0.2}"
 
+# Check if we are using the latest release
+# https://docs.github.com/en/rest/releases/releases?#get-the-latest-release
+if command -v jq &> /dev/null; then
+    LATEST=$(curl -sSfL https://api.github.com/repos/netbootxyz/netboot.xyz/releases/latest | jq -r .tag_name)
+    if [ "$netboot_version" != "$LATEST" ]; then
+        echo "WARNING: There is a newer release available - $LATEST" >/dev/stderr
+    fi
+fi
 
 # netboot for amd64:
-echo "Updating netboot for amd64"
+echo "Updating netboot for amd64 V:$netboot_version"
 mkdir -p templates/arch/amd64/boot/addons
 pushd templates/arch/amd64/boot/addons >/dev/null
 curl -fSOL# https://github.com/netbootxyz/netboot.xyz/releases/download/"${netboot_version}"/netboot.xyz.lkrn
@@ -18,7 +26,7 @@ rm -f netboot.xyz-sha256-checksums.txt
 popd >/dev/null
 
 # netboot for arm64:
-echo "Updating netboot for armm64"
+echo "Updating netboot for armm64 V:$netboot_version"
 mkdir -p templates/arch/arm64/boot/addons
 pushd templates/arch/arm64/boot/addons >/dev/null
 rm -f netboot.xyz.efi
